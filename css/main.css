@@ -91,6 +91,7 @@ body {
 	width: 65%;
 }
 
+
 #close {
 	display: none;
 }
@@ -104,9 +105,8 @@ p {
 	margin-bottom: 20px;
 }
 
-#contactTextBox a {
+a {
 	color: #FFFFFF;
-	font-size: 30px;
 }
 
 /*---------*/
