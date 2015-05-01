@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Marshall Turner</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div id="faceContainer">
+			<div class="faceBox" id="face1"></div>
+			<div class="faceBox" id="face2"></div>
+			<div class="faceBox" id="face3"></div>
+			<div class="faceBox" id="face4"></div>
+			<div class="faceBox" id="face5"></div>
+			<div class="faceBox" id="face6"></div>
+			<div class="faceBox" id="face7"></div>
+			<div class="faceBox" id="face8"></div>
+			<div class="faceBox" id="face9"></div>
+			<div class="faceBox" id="face10"></div>
+			<div class="faceBox" id="face11"></div>
+			<div class="faceBox" id="face12"></div>
+			<div class="faceBox" id="face13"></div>
+		</div>
+	</div>
+	<div id="log"></div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+
+$( document ).on( "mousemove", function( event ) {
+	for (i = 1; i <= 14; i++) { 
+    	
+		docWidth = $( document ).width();
+		docHeight = $( document ).height();
+		range = 5;
+		leftOffset = convertToRange(event.pageX, [0, docWidth], [-range * (13 - i),range * (13 - i)]);
+		topOffset = convertToRange(event.pageY, [0, docHeight], [-range * (13 - i),range * (13 - i)]);
+		
+    	$( "#face" + i ).css({
+			left: leftOffset,
+			top:  topOffset
+		});
+	}
+
+	
+});
+
+function convertToRange(value, srcRange, dstRange){
+  // value is outside source range return
+  if (value < srcRange[0] || value > srcRange[1]){
+    return NaN; 
+  }
+
+  var srcMax = srcRange[1] - srcRange[0],
+      dstMax = dstRange[1] - dstRange[0],
+      adjValue = value - srcRange[0];
+
+  return (adjValue * dstMax / srcMax) + dstRange[0];
+
+}
+
+</script>
+</html>
