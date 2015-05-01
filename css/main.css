@@ -1,5 +1,4 @@
 html, body {
-	height: 100%;
 }
 
 body {
@@ -8,14 +7,41 @@ body {
 }
 
 #container {
-	padding: 20px;
 	width: 100%;
-	min-height: 95%;
 }
 
-/*-------*/
-/*My Name*/
-/*-------*/
+#aboutTextBox {
+	position: relative;
+	width: 70%;
+	top: 150px;
+	left: 20px;
+	display: none;
+}
+#workTextBox {
+	position: relative;
+	width: 70%;
+	top: 150px;
+	left: 20px;
+	display: none;
+}
+#contactTextBox {
+	position: relative;
+	width: 70%;
+	top: 150px;
+	left: 20px;
+	display: none;
+}
+
+p {
+	font-size: 50px;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/*---------*/
+/* My Name */
+/*---------*/
 
 #name {
 	position: absolute;
@@ -34,9 +60,9 @@ body {
 
 }
 
-/*-------*/
-/* Button*/
-/*-------*/
+/*---------*/
+/* Buttons */
+/*---------*/
 
 .button {
 	display: inline-block;

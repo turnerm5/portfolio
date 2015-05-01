@@ -13,8 +13,24 @@ $( document ).on( "mousemove", function( event ) {
 			top:  topOffset
 		});
 	}
+});
 
-	
+$( "#about").click(function(){
+	$( "#contactTextBox").hide(250);
+	$( "#workTextBox").hide(250);
+	$( "#aboutTextBox").show(250);
+});
+
+$( "#work").click(function(){
+	$( "#contactTextBox").hide(250);
+	$( "#aboutTextBox").hide(250);
+	$( "#workTextBox").show(250);
+});
+
+$( "#contact").click(function(){
+	$( "#workTextBox").hide(250);
+	$( "#aboutTextBox").hide(250);
+	$( "#contactTextBox").show(250);
 });
 
 function convertToRange(value, srcRange, dstRange){
