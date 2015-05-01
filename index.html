@@ -36,9 +36,10 @@ $( document ).on( "mousemove", function( event ) {
     	
 		docWidth = $( document ).width();
 		docHeight = $( document ).height();
-		range = 5;
-		leftOffset = convertToRange(event.pageX, [0, docWidth], [-range * (13 - i),range * (13 - i)]);
-		topOffset = convertToRange(event.pageY, [0, docHeight], [-range * (13 - i),range * (13 - i)]);
+		lowerRange = 8;
+		upperRange = 5;
+		leftOffset = convertToRange(event.pageX, [0, docWidth], [-lowerRange * (13 - i),upperRange * (13 - i)]);
+		topOffset = convertToRange(event.pageY, [0, docHeight], [-lowerRange * (13 - i),upperRange * (13 - i)]);
 		
     	$( "#face" + i ).css({
 			left: leftOffset,
