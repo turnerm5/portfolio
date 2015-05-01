@@ -3,7 +3,9 @@ body {
 	font-family: 'Lora', serif;
 }
 
-/*Menu*/
+/*-------*/
+/*My Name*/
+/*-------*/
 
 #name {
 	position: absolute;
@@ -24,7 +26,9 @@ body {
 
 }
 
+/*-----------*/
 /*Plus Button*/
+/*-----------*/
 
 #plusButton {
 	position: absolute;
@@ -47,7 +51,14 @@ body {
 	color: #F0AF6F;
 }
 
+#plusButton a {
+	text-decoration: none;
+	color: #F0AF6F;
+}
+
+/*------*/
 /*Faces!*/
+/*------*/
 
 #faceContainer{
 	width: 550px;
