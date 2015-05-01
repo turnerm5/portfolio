@@ -49,8 +49,7 @@ table {
 
 
 
-/*Start Our Styles*/
-
+/*Our Styles*/
 
 html,body {
 	height: 100%
@@ -113,7 +112,7 @@ p {
 	top: 0px;
 	background: #FFFFFF;
 	padding: 10px;
-	width: 300px;
+	width: 308px;
 }
 
 #name h1 {
