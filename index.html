@@ -1,3 +1,48 @@
+<!-- 
+                                  . .  .. ..                                    
+                             ~I7$$$$Z$$7IZ$$$                                   
+                          ..Z$Z$$$$$I$7I$7=7$?$$.                               
+                          .$$$ZZ$I$.,.I?II$$7$Z$,=                              
+                         .$7$~++I$ $. ..$++7+:~?7I                              
+                         .ZI$?II,.,~$,,.: .Z$Z$=Z$Z.                            
+                         $.==+$$$.,.~:.::..?:Z$$7,$Z                            
+                         I7+=:~ Z::~.?+=:= .~$ZI$=I?~                           
+                        .?:Z.?.,. +.=.~ I:+.$+$+,~I~Z                           
+                        ,$7I?,I II?=:.I$=+I+ :..~7Z?$                           
+                         Z:+I+~+~+:7I,~,:,,,..$II.??$                           
+                        .$+?$7$$7$?=I+.~.+..~$?.7ZII+                           
+                         Z$7ZZ$$Z$$Z  ?=$... =Z7.=$7.                           
+                         $7I=77I?$ZZ + , .?.I =?.II7                            
+                         Z$Z?Z$Z$$$$  :,~.$,$$$+$$Z$                            
+                         $7$$$I$$$7=. =   ~  I:ZZZ$$                            
+                         $7~7++$??.,:....7I=~?$=$I,.                            
+                          I?$?=$:$??=: , :~=+:.7I                               
+                          $$7?7$$$$$$7$~I $7Z$ZZ                                
+                         .:Z=+.+:,+.:$:..$?~7$ZZ                                
+                           $$~II$:I$:I~$$ZI$I$ZI                                
+                           .$ZZ$$Z$$Z$?Z$$$$$Z$ZI.                              
+                              ?+Z$$I$=?+ .:$$,Z$$..                             
+                             +7$,Z+I.7,. I:.  .$===$                            
+                          +II+$7 =.$  =I.  :I=I..7.$ $7Z.                       
+                       ?$7..,.IZ=. +..:.~ :=.=,:=:. ?..~.~+? .                  
+                 ...=,I=.::~= ==~$$ :==.~ +:+=I.. =:.~ +I+:$.77?..              
+               $Z:Z,I 7.,.~I$+.$$:$ Z.....$7Z$$~$. =$..$==$.$:$$=$$.            
+          ..+:~:~ , ,. .$,..,..?Z:$:: I,.=::=::..=~.I$. ~= :.+=:$?+==:..        
+         .$I=7I=$. + Z~ I?,..I.I$7$I .7$:+??$7~$.. ,.$?.+..I$.I..,=$?ZZ         
+        I7,+ZII~$  ==$  =II+: I$$7:$7=$$$..$,=. ~$~ $ .,,7I. . ==$~,~II$        
+       $~,.:+.+. ~?  ., . .$=:.I.=:$$= I= ..$7.   =..I:I.7,...  ,=I$=IIZ:       
+     .Z++~... =::: ., +.=..:. : .=$::,,:.. = .:.$= ?,... =:.  .=:.?I??,=$.      
+     $$7., ?~~I.:I,.,~~ 7~ : 7:..  $...7 .,: $:.?. .= I. =?,.,.?.?,$7~I$$$      
+   ..$?.,: ? ?.. ,, .., :==~.    ~ ...~+.: ?:.  .  .~. = ~.~=,.=,.:~:,+$=$$     
+   $=+ : ,:. .~: ~,..  I 7,. I+. .+. = 7,I~: I,. .  : ..  +=. ,.$7:=+?.=$$$$    
+  Z$Z$$+:$.==??++.::,?.$$I?I?= ?:+$I...=~.=. ?,=I: =Z~ ~  ,$= .$$.:?$===$$$Z    
+ ZZ7$?,.:~==+ ?=,7, I~$7$7 . +.+ 77. $.7I7$$77$?.+. $$Z==~$~,$:?$=$Z+$=$$Z$Z$   
+ Z7$$Z$777?I ?7 =$::~~:7I$ ?,+.7.$Z$ 77?,$I7 $$:,~I=???Z~~$~:=I7$?$IZ I7$$$7$I. 
+ Z7$$$$ ,==:=?=+..:I==:?  $I~+ Z$Z$ $$$I.$..   . .  .  .. Z$~$:=$$II?==Z$$$.Z   
+  $7I7I~+.7I:?+:=,+,++=I?$ =7:.777.Z?.                      . ..,.  .  .Z$~     
+   . . . ..  .   ..    .. .. ..  .                                             
+--> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,9 +50,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Marshall Turner</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="container">
+		<div id="name">
+			<h1>Marshall <br> Turner</h1>
+		</div>
+		
+
+		<!-- Draw our faces -->
 		<div id="faceContainer">
 			<div class="faceBox" id="face1"></div>
 			<div class="faceBox" id="face2"></div>
@@ -24,45 +76,13 @@
 			<div class="faceBox" id="face13"></div>
 		</div>
 	</div>
-	<div id="log"></div>
+	
+	<div id="plusButton">
+		<p>+</p>
+	</div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-
-
-$( document ).on( "mousemove", function( event ) {
-	for (i = 1; i <= 14; i++) { 
-    	
-		docWidth = $( document ).width();
-		docHeight = $( document ).height();
-		lowerRange = 8;
-		upperRange = 6;
-		leftOffset = convertToRange(event.pageX, [0, docWidth], [-lowerRange * (13 - i),upperRange * (13 - i)]);
-		topOffset = convertToRange(event.pageY, [0, docHeight], [-lowerRange * (13 - i),upperRange * (13 - i)]);
-		
-    	$( "#face" + i ).css({
-			left: leftOffset,
-			top:  topOffset
-		});
-	}
-
-	
-});
-
-function convertToRange(value, srcRange, dstRange){
-  // value is outside source range return
-  if (value < srcRange[0] || value > srcRange[1]){
-    return NaN; 
-  }
-
-  var srcMax = srcRange[1] - srcRange[0],
-      dstMax = dstRange[1] - dstRange[0],
-      adjValue = value - srcRange[0];
-
-  return (adjValue * dstMax / srcMax) + dstRange[0];
-
-}
-
-</script>
+<script src="js/main.js"></script>
 </html>
