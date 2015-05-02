@@ -1,9 +1,11 @@
+// Move the head around
+
 $( document ).on( "mousemove", function( event ) {
 	for (i = 1; i <= 14; i++) { 
     	
 		docWidth = $( document ).width();
 		docHeight = $( document ).height();
-		lowerRange = 8;
+		lowerRange = 6;
 		upperRange = 6;
 		leftOffset = convertToRange(event.pageX, [0, docWidth], [-lowerRange * (14 - i),upperRange * (14 - i)]);
 		topOffset = convertToRange(event.pageY, [0, docHeight], [-lowerRange * (14 - i),upperRange * (14 - i)]);
@@ -15,6 +17,8 @@ $( document ).on( "mousemove", function( event ) {
 	}
 });
 
+
+// Color shifting, light animations
 
 $( "#work").click(function(){
 	$( "#close").show(250);
@@ -55,6 +59,15 @@ $( "#close").click(function(){
 	$( "#aboutTextBox").hide(250);
 	$( "#contactTextBox").hide(250);
 });
+
+
+// Drag the head
+
+
+$(function() {
+    $( "#faceContainer" ).draggable();
+  });
+
 
 function convertToRange(value, srcRange, dstRange){
   // value is outside source range return
