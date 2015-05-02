@@ -64,14 +64,20 @@ body {
 
 #container {
 	padding: 20px;
-	float: left;
+}
+
+#content {
+	min-width: 100%
+}
+
+#textBox {
+	width: 100%;
 }
 
 #aboutTextBox {
 	display: none;
 	clear: both;
 	margin-top: 30px;
-	margin-bottom: 80px;
 	width: 55%;
 }
 
@@ -79,7 +85,6 @@ body {
 	display: none;
 	clear: both;
 	margin-top: 30px;
-	margin-bottom: 80px;
 	width: 55%;
 }
 
@@ -87,7 +92,6 @@ body {
 	display: none;
 	clear: both;
 	margin-top: 30px;
-	margin-bottom: 80px;
 	width: 65%;
 }
 
@@ -97,8 +101,8 @@ body {
 }
 
 p {
-	font-size: 35px;
-	line-height: 40px;
+	font-size: 30px;
+	line-height: 35px;
 	color: #FFFFFF;
 	font-weight: 400;
 	font-style: italic;
@@ -143,7 +147,7 @@ a {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 25px;
-	margin-top: 10px;
+	margin-top: 4px;
 	text-decoration: none;
 	color: #F0AF6F;
 }
@@ -162,7 +166,7 @@ a {
 	height: 464px;
 	position: absolute;
 	left: 75%;
-	top: 48%;
+	top: 50%;
 	margin:-225px 0 0 -280px;
 	/*margin:-225px 0 0 -280px;*/
 

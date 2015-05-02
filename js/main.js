@@ -21,43 +21,43 @@ $( document ).on( "mousemove", function( event ) {
 // Color shifting, light animations
 
 $( "#work").click(function(){
-	$( "#close").show(250);
+	$( "#close").show(300);
 	$( "body ").animate({backgroundColor : "#85CFD0"}, 'fast');
 	$( ".button ").animate({color : "#85CFD0"}, 'fast');
 	$( "#name").animate({color : "#85CFD0"}, 'fast');
-	$( "#contactTextBox").hide(250);
-	$( "#aboutTextBox").hide(250);
-	$( "#workTextBox").show(250);
+	$( "#contactTextBox").hide(300);
+	$( "#aboutTextBox").hide(300);
+	$( "#workTextBox").show(300);
 });
 
 $( "#about").click(function(){
-	$( "#close").show(250);
+	$( "#close").show(300);
 	$( "body ").animate({backgroundColor : "#D08585"}, 'fast');
 	$( ".button ").animate({color : "#D08585"}, 'fast');
 	$( "#name").animate({color : "#D08585"}, 'fast');
-	$( "#contactTextBox").hide(250);
-	$( "#workTextBox").hide(250);
-	$( "#aboutTextBox").show(250);
+	$( "#contactTextBox").hide(300);
+	$( "#workTextBox").hide(300);
+	$( "#aboutTextBox").show(300);
 });
 
 $( "#contact").click(function(){
-	$( "#close").show(250);
+	$( "#close").show(300);
 	$( ".button ").animate({color : "#F39A70"}, 'fast');
 	$( "body ").animate({backgroundColor : "#F39A70"}, 'fast');
 	$( "#name").animate({color : "#F39A70"}, 'fast');
-	$( "#workTextBox").hide(250);
-	$( "#aboutTextBox").hide(250);
-	$( "#contactTextBox").show(250);
+	$( "#workTextBox").hide(300);
+	$( "#aboutTextBox").hide(300);
+	$( "#contactTextBox").show(300);
 });
 
 $( "#close").click(function(){
-	$( "#close").hide(250);
+	$( "#close").hide(300);
 	$( "body ").animate({backgroundColor : "#F0AF6F"}, 'fast');
 	$( ".button ").animate({color : "#F0AF6F"}, 'fast');
 	$( "#name").animate({color : "#F0AF6F"}, 'fast');
-	$( "#workTextBox").hide(250);
-	$( "#aboutTextBox").hide(250);
-	$( "#contactTextBox").hide(250);
+	$( "#workTextBox").hide(300);
+	$( "#aboutTextBox").hide(300);
+	$( "#contactTextBox").hide(300);
 });
 
 
