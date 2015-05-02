@@ -88,6 +88,16 @@ body {
 	width: 55%;
 }
 
+p.project {
+	margin-bottom: 3px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.imageThumbnail {
+	margin-bottom: 20px;
+}
+
 #contactTextBox {
 	display: none;
 	clear: both;

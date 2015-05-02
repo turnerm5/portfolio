@@ -52,9 +52,10 @@
   <!-- who am I? -->
   <title>Marshall Turner</title>
   
-  <!-- styles -->
-  <link rel="stylesheet" href="css/main.css">
+  	<!-- styles -->
+  	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="js/jquery-ui-1.11.4/jquery-ui.css">
+	<link href="css/lightbox.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
 
   <!-- favicons -->
@@ -86,20 +87,29 @@
   			<h1>Marshall <br> Turner</h1>
   		</div>
       <div id="menu">
-      <a href="#" id="work" class="button">Work</a>
-      <a href="#" id="about" class="button">About</a>
-      <a href="#" id="contact" class="button">Contact</a>
+      <a href="#work" id="work" class="button">Work</a>
+      <a href="#about" id="about" class="button">About</a>
+      <a href="#contact" id="contact" class="button">Contact</a>
       <a href="#" id="close" class="button">-</a>
     </div>
 
       <div id="textBox">
         <div id="workTextBox">
           <p>Here are some projects I've been working on.</p>
+          <p class="project">Architectural Renderings</p>
+			<a href="img/arch-rendering-ecc-aerial.jpg" data-title="Tools used: Google Earth Pro, Revit, 3ds Max, V-Ray, Photoshop." data-lightbox="arch-renderings"><img class="imageThumbnail" src="img/arch-rendering-ecc-aerial-thumb.jpg" alt=""></a>
+			<a href="img/arch-rendering-fs20.jpg" data-title="Tools used: Revit, 3ds Max, V-Ray, Photoshop." data-lightbox="arch-renderings"><img class="imageThumbnail" src="img/arch-rendering-fs20-thumb.jpg" alt=""></a>
+			<a href="img/arch-rendering-ecc-perspective.jpg" data-title="Tools used: Revit, 3ds Max, V-Ray, Photoshop." data-lightbox="arch-renderings"><img class="imageThumbnail" src="img/arch-rendering-ecc-perspective-thumb.jpg" alt=""></a>
+          	<a href="img/arch-rendering-cic.jpg" data-title="Tools used: Revit, 3ds Max, V-Ray, Photoshop." data-lightbox="arch-renderings"><img class="imageThumbnail" src="img/arch-rendering-cic-thumb.jpg" alt=""></a>
+          <p class="project">Laser Cut Lamp Developer</p>
+          <p class="project">Alcobot</p>
+          <p class="project">Bathymetric Table</p>
+          <p class="project">Bike Month Dashboard</p>
         </div>
     	
         <div id="aboutTextBox">
           <p>Seattle-based designer and jack-of-all-trades. Continuously exploring and developing innovative uses for new technologies in the design process.</p>
-          <p>I love Processing, Photoshop, Illustrator, InDesign, Python, Sublime Text, HTML, CSS, JS, jQuery, Git, Rhino, Grasshopper, 3ds Max, VRay, laser cutters, 3D printers, and any other creative tool I can get my hands on.</p>
+          <p>I love Processing, Photoshop, Illustrator, InDesign, laser cutters, Python, Sublime Text, CNC routers, HTML, CSS, JS, jQuery, Git, Rhino, Grasshopper, 3ds Max, VRay, 3D printers, and any other creative tool I can get my hands on.</p>
           <p>When I'm not 3D-scanning my head, you can find me <a href="https://instagram.com/turnerm5" target="_blank">biking around the city or cooking up a feast in my backyard</a>.</p>
         </div>
 
@@ -135,6 +145,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
 <script src="js/main.js"></script>
+<script src="js/lightbox.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
