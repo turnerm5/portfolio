@@ -1,4 +1,4 @@
-// Move the head around
+// Move the head around based on the mouse position.
 
 $( document ).on( "mousemove", function( event ) {
 	for (i = 1; i <= 14; i++) { 
@@ -18,56 +18,56 @@ $( document ).on( "mousemove", function( event ) {
 });
 
 
-// Color shifting, light animations
+// Color shifting the background, light animations
 
 $( "#work").click(function(){
-	$( "#close").show(300);
-	$( "body ").animate({backgroundColor : "#85CFD0"}, 'fast');
-	$( ".button ").animate({color : "#85CFD0"}, 'fast');
-	$( "#name").animate({color : "#85CFD0"}, 'fast');
-	$( "#contactTextBox").hide(300);
-	$( "#aboutTextBox").hide(300);
-	$( "#workTextBox").show(300);
+	$( " #close ").show(300);
+	$( " body ").animate({backgroundColor : "#85CFD0"}, 'slow');
+	$( ".button ").animate({color : "#85CFD0"}, 'slow');
+	$( " #name ").animate({color : "#85CFD0"}, 'slow');
+	$( " #contactTextBox ").hide(300);
+	$( " #aboutTextBox ").hide(300);
+	$( " #workTextBox ").show(300);
 });
 
 $( "#about").click(function(){
-	$( "#close").show(300);
-	$( "body ").animate({backgroundColor : "#D08585"}, 'fast');
-	$( ".button ").animate({color : "#D08585"}, 'fast');
-	$( "#name").animate({color : "#D08585"}, 'fast');
-	$( "#contactTextBox").hide(300);
-	$( "#workTextBox").hide(300);
-	$( "#aboutTextBox").show(300);
+	$( " #close ").show(300);
+	$( " body ").animate({backgroundColor : "#D08585"}, 'slow');
+	$( " .button ").animate({color : "#D08585"}, 'slow');
+	$( " #name ").animate({color : "#D08585"}, 'slow');
+	$( " #contactTextBox ").hide(300);
+	$( " #workTextBox ").hide(300);
+	$( " #aboutTextBox ").show(300);
 });
 
 $( "#contact").click(function(){
-	$( "#close").show(300);
-	$( ".button ").animate({color : "#F39A70"}, 'fast');
-	$( "body ").animate({backgroundColor : "#F39A70"}, 'fast');
-	$( "#name").animate({color : "#F39A70"}, 'fast');
-	$( "#workTextBox").hide(300);
-	$( "#aboutTextBox").hide(300);
-	$( "#contactTextBox").show(300);
+	$( " #close ").show(300);
+	$( " .button ").animate({color : "#F39A70"}, 'slow');
+	$( " body ").animate({backgroundColor : "#F39A70"}, 'slow');
+	$( " #name ").animate({color : "#F39A70"}, 'slow');
+	$( " #workTextBox ").hide(300);
+	$( " #aboutTextBox ").hide(300);
+	$( " #contactTextBox ").show(300);
 });
 
 $( "#close").click(function(){
-	$( "#close").hide(300);
-	$( "body ").animate({backgroundColor : "#F0AF6F"}, 'fast');
-	$( ".button ").animate({color : "#F0AF6F"}, 'fast');
-	$( "#name").animate({color : "#F0AF6F"}, 'fast');
-	$( "#workTextBox").hide(300);
-	$( "#aboutTextBox").hide(300);
-	$( "#contactTextBox").hide(300);
+	$( " #close ").hide(300);
+	$( " body ").animate({backgroundColor : "#F0AF6F"}, 'slow');
+	$( " .button ").animate({color : "#F0AF6F"}, 'slow');
+	$( " #name ").animate({color : "#F0AF6F"}, 'slow');
+	$( " #workTextBox ").hide(300);
+	$( " #aboutTextBox ").hide(300);
+	$( " #contactTextBox ").hide(300);
 });
 
 
-// Drag the head
-
-
+// Drag the head around!
 $(function() {
     $( "#faceContainer" ).draggable();
   });
 
+
+// Utility function to map one range of numbers to another.
 
 function convertToRange(value, srcRange, dstRange){
   // value is outside source range return
