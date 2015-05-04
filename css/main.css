@@ -186,10 +186,12 @@ p.project {
 	width: 550px;
 	height: 464px;
 	position: absolute;
-	left: 75%;
+	
+	/*where on the page should it go?*/
+	
+	left: 50%;
 	top: 50%;
 	margin:-225px 0 0 -280px;
-	/*margin:-225px 0 0 -280px;*/
 
 }
 
