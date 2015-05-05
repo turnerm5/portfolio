@@ -112,13 +112,14 @@ a {
 }
 
 p.project {
+	margin-top: 20px;
 	margin-bottom: 3px;
 	font-size: 20px;
 	text-transform: uppercase;
 }
 
 .imageThumbnail {
-	margin-bottom: 20px;
+	margin-bottom: 3px;
 	display: inline-block;
 }
 
