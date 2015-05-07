@@ -1,0 +1,1 @@
+multiples = (num * 10 for num in [0..10])
